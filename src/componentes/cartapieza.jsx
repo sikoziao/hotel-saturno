@@ -1,9 +1,18 @@
-export const CartaPieza = () => {
+export const CartaPieza = ({ infoPieza }) => {
   return (
     <div style={{ border: '1px solid #ccc', padding: '1rem', margin: '1rem', borderRadius: '8px', width: '250px' }}>
-      <h3>Nombre de la Pieza</h3>
-      <p>$0 CLP por noche</p>
+     
+     
+     
+     
+    <h3>{infoPieza.nombre}</h3>
+      <p><strong>Categoría:</strong> {infoPieza.categoria}</p>
+      <p>${infoPieza.precio} CLP por noche</p>
+      
       <button>Ver detalles</button>
+
+
+
     </div>
   );
 };

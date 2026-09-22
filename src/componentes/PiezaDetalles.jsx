@@ -1,4 +1,4 @@
-export const PiezaDetalle = () => {
+export const PiezaDetalles = () => {
   return (
     <div style={{ padding: '2rem', border: '2px dashed #666', marginTop: '2rem' }}>
       <h2>Detalle de la pieza seleccionada</h2>

@@ -1,16 +1,15 @@
-import { Navbar } from './componentes/navbar';
-import { ListaPieza } from './componentes/listapieza';
-import { PiezaDetalle } from './componentes/piezadetalle';
-import { hotelData } from './hotelData';
+import { Navbar } from "./componentes/Navbar.jsx";
+import { ListaPieza } from "./componentes/ListaPieza.jsx";
+import { PiezaDetalles } from "./componentes/PiezaDetalles.jsx";
+import { hotelData } from "./hotelData.js";
 
 function App() {
-  console.log("Datos del hotel cargados:", hotelData);
-
   return (
     <div>
       <Navbar />
-      <ListaPieza />
-      <PiezaDetalle />
+      
+      <ListaPieza piezas={hotelData} />
+      <PiezaDetalles />
     </div>
   );
 }
