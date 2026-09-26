@@ -1,6 +1,6 @@
-import { CartaPieza } from './CartaPieza';
+import { CartaPieza } from './cartapieza.jsx';
 
-export const ListaPieza = ({ piezas , alSelecionar
+export const ListaPieza = ({ piezas , alSeleccionar
 }) => {
   return (
     <div style={{ padding: '2rem' }}>
@@ -9,7 +9,7 @@ export const ListaPieza = ({ piezas , alSelecionar
         {piezas.map((pieza) => (
           
           <CartaPieza key={pieza.id} infoPieza={pieza}
-          alSeleccionar={alSelecionar} />
+          alSeleccionar={alSeleccionar} />
         ))}
       </div>
     </div>
