@@ -43,6 +43,7 @@ function App() {
       <PiezaDetalles
         pieza={selectedPieza}
         alReservar={() => setReservas(reservas + 1)}
+        alCerrar={() => setSelectedPieza(null)}
       />
     </div>
   );
