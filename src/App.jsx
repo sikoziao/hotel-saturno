@@ -16,23 +16,20 @@ function App() {
   );
 
   return (
-    <div>
+    <div className="min-h-screen bg-gray-50 pb-12" >
       <Navbar contadorReservas={reservas} />
 
-      <div style={{ padding: "1rem 2rem", backgroundColor: "#f4f4f4" }}>
+      <div className="bg-gray-200 py-6 px-6 shadow-inner">
+        <div className="max-w-3xl mx-auto">
         <input
           type="text"
           placeholder="buscar por nombre o categoria..."
           value={busqueda}
           onChange={(e) => setbusqueda(e.target.value)}
-          style={{
-            width: "100%",
-            padding: "0.8rem",
-            borderRadius: "6px",
-            border: "1px solid #ccc",
-            fontSize: "1rem"
-          }}
+          className="w-full p-4 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent text-gray-800 text-lg transition-all"
+          
         />
+      </div>
       </div>
 
       <ListaPieza 
